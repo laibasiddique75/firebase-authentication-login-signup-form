@@ -3,8 +3,8 @@ import { signInWithEmailAndPassword ,getAuth} from "./firebase.js";
 
 const auth = getAuth();
 
-let  signInEmail = document.getElementById("signin-email")
-let signInPassword = document.getElementById("signin-password")
+let  signInEmail = document.getElementById("login-email")
+let signInPassword = document.getElementById("login-password")
 let loginBtn = document.getElementById("login-btn")
 
 
@@ -30,6 +30,13 @@ loginBtn.addEventListener("click",()=>{
         
     }
 
-location.href = "profile.html"
+
+  
+    
+    setTimeout(() => {
+      location.href = "profile.html";
+    }, 2000);
+
+
 
 })
